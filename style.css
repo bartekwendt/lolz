@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{}
+
+body{}
+
+.home-section{
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/slider/blueGuy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-icon{
+  position: absolute;
+  top: 2.5%;
+  left: 2%;
+  z-index: 2;
+}
+
+.arrow-next{
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+}
+
+.arrow-back{
+  position: absolute;
+  top: 50%;
+  left: 3.5%;
+}
+
+.arrow-right, .arrow-left{
+  width: 40px;
+  cursor: pointer;
+}
+
+.arrow-left{
+  transform: rotate(180deg);
+}
+
+.show{
+  display: block;
+}
+
+.dotsBox{
+
+}
+
+.dotsBox{
+  position: absolute;
+  top: 92.5%;
+  left: 47.5%;
+}
+
+.dot{
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: .2s;
+}
+
+.dot:hover{
+  cursor: pointer;
+  border: 1px solid #cd3f3e;
+  transition: .2s;
+}
+
+.dotActive{
+  border: 1px solid #cd3f3e;
+  background-color: #cd3f3e;
+}
+
+.navigation-menu{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background: #1c2938;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s
+}
+
+.navigation-menu ul{
+  list-style-type: none;
+}
+
+.navigation-menu ul a{
+  text-decoration: none;
+  font-size: 72px;
+  color: #cd3f3e;
+  font-family: 'Mansalva', cursive;
+  cursor: pointer;
+  transition: .3s;
+  letter-spacing: 2px;
+}
+
+.navigation-menu ul li a:hover{
+  transition: .3s;
+  color: #f4f6f6;
+}
